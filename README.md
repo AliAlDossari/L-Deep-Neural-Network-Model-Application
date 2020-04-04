@@ -73,8 +73,8 @@ There are many methods that can be used to standardize the data, however, in the
 train_set_x = prepare_image_arrays(train_set_x_orig)
 test_set_x = prepare_image_arrays(test_set_x_orig)
 ```
-Shape of Flatten and Standardized array: (30000, 624)
-Shape of Flatten and Standardized array: (30000, 156)
+> Shape of Flatten and Standardized array: (30000, 624)
+> Shape of Flatten and Standardized array: (30000, 156)
 ## 6.	Setting up the experiment to test multiple models with different hyperparameters of:
      a.	Network Architecture (number of layers, neurons per layer).
      b.	Number of Iterations (epochs).
@@ -88,7 +88,7 @@ Setting up the experiment as follows:
 * The filltered models are trained for longer epochs and the top performing (highest test then train accuracies) is chosen.
 * The chosen model is tuned by training over long epoch and refining the overfitting by regularizing with L2 and/or dropouts.
 * The tuned model is further validated by testing over new 'unseen' images for a final check.
-* If the model checks out, it is then set and ready for produciton!
+* If the model checks out, it is then set and ready for produciton.
 ```python
 # Setting up the experiment, for details on the 'deep_nn_model_exp' function, refer to the nn_toolkit repo.
 exp_model_list = deep_nn_model_exp(train_set_x, train_set_y, test_set_x, test_set_y,
@@ -111,7 +111,7 @@ Robust models should generaly benefit from longer training times, though not alw
 display expected behaviours.
  
  ```python
- pd.set_option('display.max_columns', None) # to show all the columns of the dataframes preduced.
+pd.set_option('display.max_columns', None) # to show all the columns of the dataframes preduced.
 pd.set_option('display.max_rows', 10) # to show only 10 rows of the dataframes preduced.
 ```
 In order to continue the analysis, will add two more columns to the models dataframe, mean and statandard deviation as follows:

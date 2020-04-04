@@ -60,11 +60,13 @@ test_set_y: (1, 156)
 random_image_check(num_images = 6, set_x = train_set_x_orig, set_y = train_set_y)
 ```
 ![Pic1](https://github.com/AliAlDossari/L-Deep-Neural-Network-Model-Applictation/blob/master/application_pics/1.PNG)
+
 ```python
 # Checking 6 images and thier labels form the test set.
 random_image_check(num_images = 6, set_x = test_set_x_orig, set_y = test_set_y)
 ```
 ![Pic2](https://github.com/AliAlDossari/L-Deep-Neural-Network-Model-Applictation/blob/master/application_pics/2.PNG)
+
 The check-up clears and we can see that both the labelling and the dimensions are correct (dimensions are 100 * 100 in hight and width).
 ## 5. Standardizing the data for better training and fitting performance.
 There are many methods that can be used to standardize the data, however, in the case of images the division of each pixil by 255 (max pixel value) is sufficient.
@@ -268,8 +270,9 @@ Yhat = deep_nn_model_predict(sample_path, resize = 100, model = final_model) # f
 
 print('Yhat:', Yhat)
 ```
-> Pics Array shape: (7, 100, 100, 3)
+Pics Array shape: (7, 100, 100, 3)
 Labels Array shape: (1, 7)
 Shape of Flatten and Standardized array: (30000, 7)
 Yhat: [[0 0 1 1 0 0 0]]
+
 ![Pic21](https://github.com/AliAlDossari/L-Deep-Neural-Network-Model-Applictation/blob/master/application_pics/21.PNG)

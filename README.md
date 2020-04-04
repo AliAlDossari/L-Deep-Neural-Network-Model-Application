@@ -270,9 +270,10 @@ Yhat = deep_nn_model_predict(sample_path, resize = 100, model = final_model) # f
 
 print('Yhat:', Yhat)
 ```
-Pics Array shape: (7, 100, 100, 3)
+> Pics Array shape: (7, 100, 100, 3)
 Labels Array shape: (1, 7)
 Shape of Flatten and Standardized array: (30000, 7)
+
 Yhat: [[0 0 1 1 0 0 0]]
 
 ![Pic21](https://github.com/AliAlDossari/L-Deep-Neural-Network-Model-Applictation/blob/master/application_pics/21.PNG)
